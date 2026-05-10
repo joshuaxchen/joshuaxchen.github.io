@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Joshua Chen is a software and app developer building focused tools like Pocket Trader."
+  />
+  <title>Joshua Chen | Developer Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="projects.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Joshua Chen home">Joshua Chen</a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Software and app developer</p>
+        <h1 id="hero-title">Building practical products with clean interfaces.</h1>
+        <p class="hero-text">
+          I design and build focused applications, with an emphasis on product clarity,
+          reliable workflows, and user-facing polish.
+        </p>
+        <div class="hero-actions" aria-label="Primary actions">
+          <a class="button primary" href="#projects">View Projects</a>
+          <a class="button secondary" href="https://github.com/joshuaxchen">GitHub</a>
+        </div>
+      </div>
+
+      <aside class="featured-signal" aria-label="Featured project preview">
+        <div class="app-mark">
+          <img src="assets/pockettrader.png" alt="Pocket Trader app artwork" />
+        </div>
+        <div>
+          <p class="signal-label">Featured project</p>
+          <h2>Pocket Trader</h2>
+          <p>A companion trading app for Pokemon TCG Pocket.</p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <p class="eyebrow">Selected work</p>
+        <h2 id="projects-title">Projects</h2>
+      </div>
+      <div class="project-grid" id="project-list" aria-live="polite"></div>
+      <noscript>
+        <article class="project-card">
+          <div class="project-media">
+            <img src="assets/pockettrader.png" alt="Pocket Trader app artwork" />
+          </div>
+          <div class="project-content">
+            <p class="project-kicker">Mobile app</p>
+            <h3>Pocket Trader</h3>
+            <p>
+              A companion trading app for Pokemon TCG Pocket that helps players
+              discover cards and traders, post listings, propose trades, chat,
+              and build reputation.
+            </p>
+          </div>
+        </article>
+      </noscript>
+    </section>
+
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="section-heading">
+        <p class="eyebrow">About</p>
+        <h2 id="about-title">Minimal, product-minded engineering.</h2>
+      </div>
+      <p>
+        I am Joshua Chen, a developer focused on building useful software with
+        straightforward interactions and maintainable implementation choices.
+      </p>
+      <p>
+        This site keeps the spotlight on shipped work. Pocket Trader is the
+        initial featured project, and the project data is structured so new work
+        can be added without changing the page layout.
+      </p>
+    </section>
+
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="section-heading">
+        <p class="eyebrow">Contact</p>
+        <h2 id="contact-title">Find me online.</h2>
+      </div>
+      <a class="contact-link" href="https://github.com/joshuaxchen">
+        github.com/joshuaxchen
+      </a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Joshua Chen.</p>
+  </footer>
+</body>
+</html>
